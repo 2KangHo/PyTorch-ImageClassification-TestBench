@@ -1,0 +1,8 @@
+.*.swp
+*.pyc
+__pycache__/
+models/__pycache__/
+
+data/
+checkpoint/
+summary/
