@@ -102,7 +102,7 @@ $ python main.py cifar10 -a mobilenet -C -g 0 1 2 3 -b 256
 #### Resume training
 
 ``` shell
-$ python main.py cifar10 -a mobilenet -C -g 0 1 2 3 -b 256 -r --ckpt ckpt_epoch_50.pth
+$ python main.py cifar10 -a mobilenet -C -g 0 1 2 3 -b 256 -R --ckpt ckpt_epoch_50.pth
 ```
 
 #### Train all networks on every possible datasets
@@ -120,7 +120,7 @@ $ ./run_cifar.sh
 ### Test
 
 ``` shell
-$ python main.py cifar10 -a mobilenet -C -g 0 1 2 3 -b 256 -e --ckpt ckpt_best.pth
+$ python main.py cifar10 -a mobilenet -C -g 0 1 2 3 -b 256 -E --ckpt ckpt_best.pth
 ```
 
 ## Delete Checkpoints (without best validation accuracy checkpoint)
