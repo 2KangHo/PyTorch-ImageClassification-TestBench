@@ -44,7 +44,7 @@ $ python down_ckpt.py imagenet -a mobilenet -o pretrained_model.pth
 ***for downloading all checkpoints***
 
 ``` shell
-./down_ckpt_all.sh
+$ ./down_ckpt_all.sh
 ```
 
 ----------
