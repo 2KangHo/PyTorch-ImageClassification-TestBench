@@ -67,7 +67,7 @@ if __name__ == '__main__':
         elif args.arch == 'mobilenetv2':
             file_id = '19qGclWiEdBz40af3O3vd0S1cTq_oNcLM'
         elif args.arch == 'shufflenet':
-            file_id = '15t4m6_wOU99qnAlEPNyJiSBjWOtuvlkE'
+            file_id = '1qG9Dt_GRxecYMCkthXd9_dAJ6Dv6EXop'
         elif args.arch == 'shufflenetv2':
             file_id = '1VdlJSXt4PWi6iWZNYDNFZaUaIZgtRavg'
     elif args.dataset == 'cifar100':
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         elif args.arch == 'mobilenetv2':
             file_id = '1qKI8Ipjs33eBGBWoy4L202Bmuzn4X9TC'
         elif args.arch == 'shufflenet':
-            file_id = '1GX9Xaj5R4v-XqZgft6t_8EHHfw1NMa24'
+            file_id = '1TrV7OrUNJ0eIgJNR1tR5JupX8sRhFkZK'
         elif args.arch == 'shufflenetv2':
             file_id = '1VcRXdeGYPtwz75Qx_NF5SyXI-yRM3Ivf'
     elif args.dataset == 'imagenet':
