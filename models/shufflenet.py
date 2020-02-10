@@ -6,13 +6,13 @@ from torch.nn import init
 
 
 def conv3x3(in_channels, out_channels, stride=1, 
-            padding=1, bias=True, groups=1):    
+            padding=1, bias=False, groups=1): 
     """3x3 convolution with padding
     """
     return nn.Conv2d(
-        in_channels, 
-        out_channels, 
-        kernel_size=3, 
+        in_channels,
+        out_channels,
+        kernel_size=3,
         stride=stride,
         padding=padding,
         bias=bias,
@@ -25,9 +25,10 @@ def conv1x1(in_channels, out_channels, groups=1):
     - Grouped pointwise convolution when groups > 1
     """
     return nn.Conv2d(
-        in_channels, 
-        out_channels, 
-        kernel_size=1, 
+        in_channels,
+        out_channels,
+        kernel_size=1,
+        bias=False,
         groups=groups,
         stride=1)
 
