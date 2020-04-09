@@ -24,8 +24,8 @@ def config():
                         help='number of data loading workers (default: 8)')
     parser.add_argument('--epochs', default=200, type=int, metavar='N',
                         help='number of total epochs to run (default: 200)')
-    parser.add_argument('-b', '--batch-size', default=128, type=int, metavar='N',
-                        help='mini-batch size (default: 128), this is the total '
+    parser.add_argument('-b', '--batch-size', default=256, type=int, metavar='N',
+                        help='mini-batch size (default: 256), this is the total '
                              'batch size of all GPUs on the current node when '
                              'using Data Parallel')
     parser.add_argument('--lr', '--learning-rate', default=0.1, type=float,
@@ -41,8 +41,8 @@ def config():
                              'uniformly at each layer (default: 1.0)')
     parser.add_argument('--groups', default=2, type=int, metavar='N',
                         help='number of groups for ShuffleNet (default: 2)')
-    parser.add_argument('-p', '--print-freq', default=50, type=int,
-                        metavar='N', help='print frequency (default: 50)')
+    parser.add_argument('-p', '--print-freq', default=200, type=int,
+                        metavar='N', help='print frequency (default: 200)')
     parser.add_argument('--ckpt', default='', type=str, metavar='PATH',
                         help='Path of checkpoint for resuming/testing '
                              'or retraining model (Default: none)')
