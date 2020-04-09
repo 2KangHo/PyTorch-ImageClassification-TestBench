@@ -121,10 +121,10 @@ def imagenet_loader(batch_size, num_workers, datapath, cuda):
     ])
 
     trainset = ImageNet(
-        root=datapath, split='train', download=True,
+        root=datapath, split='train', download=False,
         transform=transform_train)
     valset = ImageNet(
-        root=datapath, split='val', download=True,
+        root=datapath, split='val', download=False,
         transform=transform_val)
 
     if cuda:
